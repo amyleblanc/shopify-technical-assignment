@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { useHistoryContext } from "./contexts/useHistoryContext";
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import TextField from '@mui/material/TextField';
+import { Box, Button, Card, CardMedia, CardContent, TextField } from "@mui/material";
 import ResponseList from "./components/ResponseList";
 
 export default function AskOpenAI() {
@@ -25,9 +20,7 @@ export default function AskOpenAI() {
     });
 
     const data = await response.json();
-
     const id = Math.random().toString(36).substr(2, 3);
-
     const newAnswer = {
       id,
       question,
@@ -36,7 +29,7 @@ export default function AskOpenAI() {
 
     setHistory(prevHistory => [newAnswer, ...prevHistory])
     setQuestion(subsequent);
-  }
+  };
 
   const handleChange = (event) => {
     setQuestion(event.target.value);
@@ -46,10 +39,10 @@ export default function AskOpenAI() {
     <>
       <Box sx={{ display: "flex", flexDirection: "row" }}>
         <Box sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 500, maxHeight: 550 }}>
+          <Card sx={{ maxWidth: "500px", maxHeight: "550px", boxShadow: 3 }}>
             <CardMedia
               component="img"
-              height="350"
+              height="350px"
               image="/amy-shopify.gif"
               alt="woman typing"
             />
