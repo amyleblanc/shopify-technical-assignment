@@ -14,8 +14,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Typography align="center" variant="h5" sx={{paddingBottom: "50px", color: "white", maxWidth: "600px"}}>
-          Hi there Shopifolk! <br/>My name is Amy McCarthy,<br/>click below to find out why you should hire me...
+        <Typography 
+          align="center"
+          variant="h4"
+          sx={{
+            paddingBottom: "50px", 
+            color: "#458f47", 
+            maxWidth: "500px"
+          }}>
+          Hi there Shopifolk!<br/>My name is Amy McCarthy,
+          <br/>click below to find out why you should hire me...
         </Typography>
         <AskOpenAI />
       </main>
