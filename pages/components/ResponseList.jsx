@@ -8,7 +8,11 @@ export default function ResponseList() {
   return (
     <>
       {history.map(element => (
-        <Response question={element.question} answer={element.answer} key={element.id}/>
+        <Response 
+          question={element.question}
+          answer={element.answer} 
+          key={element.id}
+        />
       ))}
     </>
   );
