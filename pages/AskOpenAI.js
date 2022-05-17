@@ -9,9 +9,6 @@ export default function AskOpenAI() {
   const [question, setQuestion] = useState(initial);
   const { history, setHistory } = useHistoryContext() || {};
   
-  console.log("history: ", history);
-  console.log("useHistoryContext: ", useHistoryContext());
-
   async function handleSubmit(event) {
     event.preventDefault();
     const response = await fetch("/api/generate", {
