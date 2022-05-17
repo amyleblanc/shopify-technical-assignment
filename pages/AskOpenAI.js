@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistoryContext } from "../contexts/useHistoryContext";
 import { Box, Button, Card, CardMedia, CardContent, TextField } from "@mui/material";
-import ResponseList from "./components/ResponseList";
+import ResponseList from "../components/ResponseList";
 
 export default function AskOpenAI() {
   const initial = "Tell me why Amy would be a great front end developer at Shopify."
