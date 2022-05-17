@@ -15,7 +15,7 @@ To use my template, please follow the instructions below to get set up.
 3. Navigate into the project directory
 
    ```bash
-   $ cd shopify-frontend-internship
+   $ cd shopify-technical-assignment
    ```
 
 4. Install the requirements
