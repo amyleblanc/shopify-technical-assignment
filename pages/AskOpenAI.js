@@ -69,7 +69,7 @@ export default function AskOpenAI() {
           </Card>
         </Box>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
-          {history && <ResponseList />}
+          {history.length > 1 && <ResponseList />}
         </Box>
       </Box>
     </>
