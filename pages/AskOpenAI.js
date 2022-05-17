@@ -7,7 +7,10 @@ export default function AskOpenAI() {
   const initial = "Tell me why Amy would be a great front end developer at Shopify."
   const subsequent = "Tell me MORE about why Amy would be a great front end developer at Shopify. She sounds pretty great! 😜"
   const [question, setQuestion] = useState(initial);
-  const { history, setHistory } = useHistoryContext();
+  const { history, setHistory } = useHistoryContext() || null;
+  
+  console.log("history: ", history);
+  console.log("useHistoryContext: ", useHistoryContext());
 
   async function handleSubmit(event) {
     event.preventDefault();
