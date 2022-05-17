@@ -1,5 +1,5 @@
 import React from "react";
-import { HistoryProvider } from "./contexts/useHistoryContext";
+import { HistoryProvider } from "../contexts/useHistoryContext";
 import Head from "next/head";
 import AskOpenAI from "./AskOpenAI";
 import styles from "./index.module.css";

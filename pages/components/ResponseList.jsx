@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistoryContext } from '../contexts/useHistoryContext';
+import { useHistoryContext } from '../../contexts/useHistoryContext';
 import Response from './Response';
 
 export default function ResponseList() {

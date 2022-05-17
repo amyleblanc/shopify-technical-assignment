@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistoryContext } from "./contexts/useHistoryContext";
+import { useHistoryContext } from "../contexts/useHistoryContext";
 import { Box, Button, Card, CardMedia, CardContent, TextField } from "@mui/material";
 import ResponseList from "./components/ResponseList";
 
